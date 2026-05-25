@@ -1,0 +1,50 @@
+# Module3_Feature Group_Insights
+# Comprehensive Study Report: MLOps & Data Engineering Fundamentals
+
+---
+
+## 1. Architectural & MLOps Concepts
+
+* **Feature Store:** A centralized repository that defines, stores, and serves features consistently for both offline model training and low-latency, real-time online inference.
+* **Training-Serving Skew:** A performance drop caused by a mismatch in how features are calculated or distributed between the training environment and production.
+* **Feature Importance:** A metric that quantifies the relative impact and utility of each input feature on a model's predictions and overall performance.
+
+---
+
+## 2. Data Integrity & Lifecycle Management
+
+* **Temporal Data Leakage:** A critical error where future data is inadvertently used in training, leading to overly optimistic evaluation metrics that fail in production.
+* **Outliers:** Data points that deviate significantly from the rest of the dataset, which can either distort model training or provide valuable anomaly signals.
+* **Data Imputation:** The tactical process of replacing missing or null values with statistical substitutes like the mean, median, or mode to ensure algorithm compatibility.
+
+---
+
+## 3. Class Dynamics & Dataset Balancing
+
+* **Class Imbalance:** A scenario where one class heavily outnumbers another, biasing the model to favor the majority class and neglect the minority class.
+* **Resampling:** Modifying a dataset's class distribution by either oversampling the minority class or undersampling the majority class to mitigate imbalance.
+* **Overfitting:** A modeling error where an algorithm learns training data noise too closely, causing high training accuracy but poor generalization to new data.
+
+---
+
+## 4. Data Annotation & Quality
+
+* **Label Multiplicity:** The presence of multiple, potentially conflicting human-assigned labels for a single data instance, used to measure inter-rater agreement.
+
+---
+
+## 5. Probability Sampling Methods (Unbiased Selection)
+
+* **Simple Random Sampling:** A technique where every individual element in the population has an exact, equal chance of being selected.
+* **Stratified Sampling:** Dividing a population into distinct subgroups (strata) and randomly sampling from each to ensure exact, proportional representation.
+* **Weighted Sampling:** Assigning probabilities to elements based on weights, making the likelihood of selection proportional to each item's relative importance.
+* **Reservoir Sampling:** A randomized algorithm used to sample a fixed number of items from a continuous, fast-moving data stream with limited memory.
+
+---
+
+## 6. Non-Probability Sampling Methods (Biased/Purposive Selection)
+
+* **Convenience Sampling:** Selecting data points based purely on their immediate accessibility and ease of inclusion.
+* **Judgment Sampling:** Relying entirely on a researcher's personal expertise and discretion to select specific, information-rich data points.
+* **Quota Sampling:** Assembling a sample that fills predetermined demographic quotas, selecting participants non-randomly until the segments are full.
+* **Snowball Sampling:** A chain-referral technique where initial subjects recruit future participants from their own networks to sample rare populations.
